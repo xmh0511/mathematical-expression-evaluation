@@ -6,7 +6,7 @@ namespace caculator {
 	public:
 		caculate_error(std::string const& what) :what_(what) {}
 	public:
-		char const* what() const {
+		char const* what() const noexcept{
 			return what_.data();
 		}
 	private:
